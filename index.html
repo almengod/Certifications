@@ -6,45 +6,83 @@
     <title>Mis Certificados</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
         h1 {
-            text-align: center;
+            margin-bottom: 40px;
             color: #333;
         }
         .certificado {
             background: #fff;
             padding: 20px;
-            margin: 10px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .certificado:hover {
+            transform: translateY(-5px);
+        }
+        .certificado h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .certificado p {
+            color: #555;
         }
         .certificado a {
+            display: inline-block;
+            margin-top: 10px;
             text-decoration: none;
-            color: #007bff;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
         .certificado a:hover {
-            text-decoration: underline;
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f1f1f1;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header class="header">
         <h1>Mis Certificados</h1>
-        <div class="Certificates">
-            <h2>Certificado en Data Science with Python</h2>
-            <a href="Certificates/Alejandro Méndez Godoy Ciencia de Datos con Python.pdf" target="_blank">Ver Certificado</a>
+    </header>
+    <div class="container">
+        <div class="certificado">
+            <h2>Certificado en Curso de Gestión de Proyectos</h2>
+            <p>Descripción breve del curso y de las habilidades adquiridas.</p>
+            <a href="certificados/certificado1.pdf" target="_blank">Ver Certificado</a>
         </div>
         <div class="certificado">
-            <h2>Certificado en AWS Data Engineer</h2>
-            <a href="Certificates/Alejandro Méndez Godoy Ingenieria de Datos con AWS.pdf" target="_blank">Ver Certificado</a>
+            <h2>Certificado en Data Science</h2>
+            <p>Descripción breve del curso y de las habilidades adquiridas.</p>
+            <a href="certificados/certificado2.pdf" target="_blank">Ver Certificado</a>
         </div>
     </div>
+    <footer>
+        <p>© 2024 Nombre Apellido. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
